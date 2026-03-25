@@ -1,0 +1,220 @@
+:root{
+  --bg: #0b1220;
+  --panel: rgba(255,255,255,0.06);
+  --panel2: rgba(255,255,255,0.04);
+  --text: rgba(255,255,255,0.92);
+  --muted: rgba(255,255,255,0.65);
+  --border: rgba(255,255,255,0.10);
+  --accent: #4f8cff;
+  --accent2: #32d583;
+  --danger: #ff5a6a;
+  --shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+*{ box-sizing: border-box; }
+body{
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  background: radial-gradient(1200px 600px at 20% 0%, rgba(79,140,255,0.25), transparent 60%),
+              radial-gradient(900px 500px at 90% 10%, rgba(50,213,131,0.18), transparent 55%),
+              var(--bg);
+  color: var(--text);
+}
+
+.topbar{
+  padding: 26px 20px 14px;
+}
+
+.brand__title{
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+.brand__subtitle{
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.container{
+  padding: 10px 20px 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.panel{
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px;
+  margin: 14px 0;
+  box-shadow: var(--shadow);
+}
+
+.panel__header{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.filters{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.filters__label{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.muted{
+  color: var(--muted);
+  font-size: 13px;
+}
+
+h2{
+  margin: 0 0 12px;
+  font-size: 18px;
+}
+
+.form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.form label{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+input, textarea, select{
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.06);
+  color: var(--text);
+  outline: none;
+}
+
+textarea{
+  min-height: 92px;
+  resize: vertical;
+}
+
+.form label:nth-child(3),
+.form label:nth-child(4),
+.form label:nth-child(1),
+.form label:nth-child(2){
+  grid-column: span 1;
+}
+
+.btn{
+  padding: 11px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.06);
+  color: var(--text);
+  cursor: pointer;
+}
+.btn:hover{
+  border-color: rgba(255,255,255,0.22);
+}
+
+.btn--primary{
+  grid-column: span 2;
+  border-color: rgba(79,140,255,0.45);
+  background: linear-gradient(90deg, rgba(79,140,255,0.20), rgba(79,140,255,0.06));
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.grid--small{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.card{
+  background: var(--panel2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card__title{
+  font-weight: 750;
+  line-height: 1.2;
+  font-size: 14px;
+}
+
+.card__meta{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.chip{
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.rating{
+  font-size: 12px;
+  color: rgba(255,255,255,0.85);
+}
+.rating strong{
+  color: var(--accent2);
+}
+
+.card__desc{
+  color: var(--muted);
+  font-size: 12px;
+  min-height: 34px;
+}
+
+.card__actions{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.btn--watch{
+  width: 100%;
+  background: linear-gradient(90deg, rgba(50,213,131,0.25), rgba(50,213,131,0.05));
+  border-color: rgba(50,213,131,0.45);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+@media (max-width: 900px){
+  .grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .grid--small{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .form{ grid-template-columns: 1fr; }
+  .btn--primary{ grid-column: span 1; }
+}
+

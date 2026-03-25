@@ -1,0 +1,13 @@
+com\example\vidsuggest\service\VideoService.class
+com\example\vidsuggest\VidSuggestApplication.class
+com\example\vidsuggest\exception\GlobalExceptionHandler.class
+com\example\vidsuggest\entity\Video.class
+com\example\vidsuggest\exception\ApiError.class
+com\example\vidsuggest\repository\VideoRepository.class
+com\example\vidsuggest\exception\ResourceNotFoundException.class
+com\example\vidsuggest\entity\UserPreference.class
+com\example\vidsuggest\dto\VideoCreateRequest.class
+com\example\vidsuggest\dto\VideoResponse.class
+com\example\vidsuggest\repository\UserPreferenceRepository.class
+com\example\vidsuggest\controller\VideoController.class
+com\example\vidsuggest\dto\VideoRatingUpdateRequest.class

@@ -1,0 +1,13 @@
+C:\Users\arjun\OneDrive\Desktop\aRJUN\VidSuggest\backend\src\main\java\com\example\vidsuggest\controller\VideoController.java
+C:\Users\arjun\OneDrive\Desktop\aRJUN\VidSuggest\backend\src\main\java\com\example\vidsuggest\dto\VideoCreateRequest.java
+C:\Users\arjun\OneDrive\Desktop\aRJUN\VidSuggest\backend\src\main\java\com\example\vidsuggest\dto\VideoRatingUpdateRequest.java
+C:\Users\arjun\OneDrive\Desktop\aRJUN\VidSuggest\backend\src\main\java\com\example\vidsuggest\dto\VideoResponse.java
+C:\Users\arjun\OneDrive\Desktop\aRJUN\VidSuggest\backend\src\main\java\com\example\vidsuggest\entity\UserPreference.java
+C:\Users\arjun\OneDrive\Desktop\aRJUN\VidSuggest\backend\src\main\java\com\example\vidsuggest\entity\Video.java
+C:\Users\arjun\OneDrive\Desktop\aRJUN\VidSuggest\backend\src\main\java\com\example\vidsuggest\exception\ApiError.java
+C:\Users\arjun\OneDrive\Desktop\aRJUN\VidSuggest\backend\src\main\java\com\example\vidsuggest\exception\GlobalExceptionHandler.java
+C:\Users\arjun\OneDrive\Desktop\aRJUN\VidSuggest\backend\src\main\java\com\example\vidsuggest\exception\ResourceNotFoundException.java
+C:\Users\arjun\OneDrive\Desktop\aRJUN\VidSuggest\backend\src\main\java\com\example\vidsuggest\repository\UserPreferenceRepository.java
+C:\Users\arjun\OneDrive\Desktop\aRJUN\VidSuggest\backend\src\main\java\com\example\vidsuggest\repository\VideoRepository.java
+C:\Users\arjun\OneDrive\Desktop\aRJUN\VidSuggest\backend\src\main\java\com\example\vidsuggest\service\VideoService.java
+C:\Users\arjun\OneDrive\Desktop\aRJUN\VidSuggest\backend\src\main\java\com\example\vidsuggest\VidSuggestApplication.java

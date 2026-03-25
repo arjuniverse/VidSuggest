@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VidSuggest</title>
+  <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand__title">VidSuggest</div>
+      <div class="brand__subtitle">YouTube-style video recommendations</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>Add a Video</h2>
+
+      <form id="addVideoForm" class="form">
+        <label>
+          Title
+          <input id="title" name="title" type="text" placeholder="e.g. Spring Boot Basics" required />
+        </label>
+
+        <label>
+          Category
+          <input id="category" name="category" type="text" placeholder="e.g. Java" required />
+        </label>
+
+        <label>
+          Description
+          <textarea id="description" name="description" placeholder="Short description..." required></textarea>
+        </label>
+
+        <label>
+          YouTube Link
+          <input id="youtubeLink" name="youtubeLink" type="url" placeholder="https://www.youtube.com/watch?v=..." required />
+        </label>
+
+        <label>
+          Rating (0 - 5)
+          <input id="rating" name="rating" type="number" step="0.1" min="0" max="5" required />
+        </label>
+
+        <button class="btn btn--primary" type="submit">Add Video</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <div class="panel__header">
+        <h2>Browse Videos</h2>
+        <div class="filters">
+          <label class="filters__label">
+            Filter by category
+            <select id="categoryFilter">
+              <option value="">All categories</option>
+            </select>
+          </label>
+
+          <button id="refreshBtn" class="btn" type="button">Refresh</button>
+        </div>
+      </div>
+
+      <div id="videosGrid" class="grid"></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel__header">
+        <h2>Recommended</h2>
+        <div class="filters">
+          <div id="recommendedFor" class="muted">Pick a category to see recommendations.</div>
+        </div>
+      </div>
+
+      <div id="recommendedGrid" class="grid grid--small"></div>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
+
